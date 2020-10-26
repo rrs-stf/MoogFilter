@@ -2,6 +2,11 @@
 
 The following implementation of a ladder filter was inspired from [1], which is a white-box modelling approach of the Moog lowpass ladder filter.
 
+## Build
+
+For ease of building, the .xcodeproj file can be used to build in MacOS. Or use the Projucer file to choose your prefered compiler. 
+The end result of the build is a VST3 plugin, found in the Builds folder. 
+
 ## Implementation
 
 The project takes the classic four-pole design of the Moog ladder filter (shown in Fig. 1 of [1]) and discretizes the voltage output at each filter stage within the circuit using the bilinear transform. 
